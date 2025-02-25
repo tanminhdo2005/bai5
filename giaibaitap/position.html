@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td{
+            padding: 8px;
+            color: white;
+            font-size: 15px;
+        }
+        table{
+            background-color: #F15C00;
+            display: block;
+            top: 0;
+            position: sticky;
+            border-radius: 8px;
+            z-index: 10000;
+        }
+        .container{
+            position: relative;
+            margin-top: 30px;
+            border: white solid 1px;
+            background-color: #CECDCE;
+            width: 100%;
+            height: 100vh;
+        }
+        .box1{
+            color: #CECDCE;
+            border: #CECDCE;
+            background-color: #F15C00;
+            padding: 15px 35px;
+            border-radius: 8px;
+            top: 0px;
+            left: 0;
+            position: absolute;
+        }
+        .box2{
+            color: #CECDCE;
+            position: absolute;
+            right: 10px;
+            background-color: #E81500;
+            border-radius: 8px;
+            padding: 15px 35px;
+            top: 10px;
+        }
+        .box3{
+            position: absolute;
+            color: #CECDCE;
+            border-radius: 8px;
+            background-color: #338200;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 35px;
+        }
+        .box4{
+            position: absolute;
+            color: #CECDCE;
+            background-color: #2F10DA;
+            padding: 15px 35px;
+            bottom: 30px;
+            left: 35px;
+            border-radius: 8px;
+
+        }
+        .container2 p::first-line{
+            text-transform: uppercase;
+        }
+        .container2{
+            /* position: relative; */
+            background-color: #0060C5;
+            border: #CECDCE;
+            border-radius: 8px;
+            padding: 80px 50px 80px;
+            margin-top: 30px;
+            color: aliceblue;
+        }
+        .circle::before {
+            content: "";
+           position:absolute;
+            border-radius: 50%;
+            border: #c20dc2 solid 1px;
+            width: 100px;
+            height: 100px;
+            top: -50px;
+            left: -20px;
+            background-color: #004EA0;  
+            z-index: -1;          
+        }
+        .circle::first-letter{
+            font-size: 40px;
+        }
+       p{
+        position: relative;
+        z-index: 1;
+       }
+       .circle::after {
+    content: "📞"; /* Thêm biểu tượng điện thoại */
+    position: absolute;
+    border-radius: 50%;
+    width: 60px; /* Kích thước vòng tròn */
+    height: 60px;
+    right: 20px;
+    bottom: -30px;
+    background-color: #25D366; /* Màu xanh giống WhatsApp */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Kích thước icon */
+    color: white; /* Màu của biểu tượng */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <h2><b>Bài tập về position</b></h2>
+    <p><b>Yêu cầu: </b>
+    Code các box như dưới đây. Chú ý có cả
+    bo góc cho các element.
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <td>Trang chủ</td>
+                <td>Giới thiệu</td>
+                <td>Sản phẩm</td>
+                <td>Tin tức</td>
+                <td>Liên hệ</td>
+            </tr>
+        </thead>
+    </table>
+    <div class="container">
+        <div class="box1">
+            1
+        </div>
+        <div class="box2">
+            2
+        </div>
+        <div class="box3">
+            3
+        </div>
+        <div class="box4">
+            4
+        </div>
+    </div>
+    <div class="container2">
+    <p class="circle" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit animi ea voluptate dolor fugit, officiis nobis nulla porro facere minima voluptatum unde aspernatur consequatur voluptatibus nemo illum nisi maiores aperiam.
+        Voluptatibus laborum laboriosam hic magnam dolore fuga saepe beatae quia impedit dignissimos illum, officiis aut nisi omnis ex, nostrum est consectetur repellat asperiores dolorum repellendus! Voluptas minus eos excepturi eum!
+        Repellat illum, quidem harum dignissimos minus dolores ipsa veritatis doloribus natus, eveniet laborum architecto. Repellat quam aperiam ex eaque ea rem sunt voluptatem cum veritatis fugit in, itaque fuga aliquam.
+        Incidunt iusto quaerat dolorem nihil ex reprehenderit saepe labore necessitatibus, adipisci, minus rerum dicta dolore recusandae atque earum possimus. Excepturi similique facere delectus aspernatur assumenda illum ducimus saepe vel earum!
+        Veniam tenetur dolorem, praesentium eveniet aliquam cum eum. Quisquam praesentium aut modi nobis soluta quaerat esse reiciendis vel et porro odit ab facere illum voluptatum tempora ducimus, provident fugiat eos?
+        Id minima inventore corporis! Ab quod vel earum tempora recusandae cupiditate sit, in excepturi, nisi cum ipsum deserunt unde vero ratione repellendus fugiat laboriosam, nam harum architecto qui officia. Ratione.
+       
+    </p>
+    </div>
+ <!-- sửa bài cuối này ở file test.html nha -->
+</body>
+</html>

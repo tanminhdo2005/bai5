@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        a{
+            color:black;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: blue;
+        }
+    </style>
+
+    <a href="#123" >
+        Link sang trang nè
+    </a> -->
+    <style>
+        ul li:first-child{
+            color:red;
+        }
+        ul li:last-child{
+            color:blue;
+        }
+    </style>
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+        <li>Mục 4</li>
+
+    </ul>
+    <style>
+        /* .box span{
+            background-color: orange;
+            cách thông thường
+        } */
+        .box::after{
+            content:"Nội dung trước";
+        }
+    </style>
+    <div class="box">
+        <!-- <span>Nội dung trước</span> -->
+        Nội dung 1
+    </div>
+</body>
+</html>

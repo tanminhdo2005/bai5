@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <style>
+  .content{
+    background: #0064bbfc;
+    padding: 60px 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .content::before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background:rgba(0, 0, 0, 0.301);
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .content::after{
+    content: "";
+    display: block;
+    width: 240px;
+    height: 240px;
+    background: rgba(0, 0, 0, 0.308);
+    border-radius: 50%;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+  }
+  .inner-content{
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .inner-content::first-letter{
+    font-size: 40px;
+  }
+  .inner-content::first-line{
+    text-transform: uppercase;
+  }
+
+ </style>
+   <div class="content">
+    <div class="inner-content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit animi ea voluptate dolor fugit, officiis nobis nulla porro facere minima voluptatum unde aspernatur consequatur voluptatibus nemo illum nisi maiores aperiam.
+        Voluptatibus laborum laboriosam hic magnam dolore fuga saepe beatae quia impedit dignissimos illum, officiis aut nisi omnis ex, nostrum est consectetur repellat asperiores dolorum repellendus! Voluptas minus eos excepturi eum!
+        Repellat illum, quidem harum dignissimos minus dolores ipsa veritatis doloribus natus, eveniet laborum architecto. Repellat quam aperiam ex eaque ea rem sunt voluptatem cum veritatis fugit in, itaque fuga aliquam.
+        Incidunt iusto quaerat dolorem nihil ex reprehenderit saepe labore necessitatibus, adipisci, minus rerum dicta dolore recusandae atque earum possimus. Excepturi similique facere delectus aspernatur assumenda illum ducimus saepe vel earum!
+        Veniam tenetur dolorem, praesentium eveniet aliquam cum eum. Quisquam praesentium aut modi nobis soluta quaerat esse reiciendis vel et porro odit ab facere illum voluptatum tempora ducimus, provident fugiat eos?
+        Id minima inventore corporis! Ab quod vel earum tempora recusandae cupiditate sit, in excepturi, nisi cum ipsum deserunt unde vero ratione repellendus fugiat laboriosam, nam harum architecto qui officia. Ratione.
+       
+    </div>
+</div>
+</body>
+</html>
